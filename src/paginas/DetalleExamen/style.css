@@ -1,0 +1,96 @@
+.detalle-examen-container {
+  background-color: #f5f8ff;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+/* GRID PRINCIPAL: horizontal sin scroll */
+.detalle-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.2rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h2 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.info-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+/* Diagnóstico */
+.diagnostico-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.diagnostico-item {
+  background-color: #f8fafc;
+  border-radius: 10px;
+  padding: 0.8rem;
+  flex: 1;
+}
+
+.diagnostico-item h3 {
+  color: #1d4ed8;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.diagnostico-item p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+/* Notas */
+.nota-texto {
+  background-color: #f1f5f9;
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: #334155;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Responsivo (para pantallas pequeñas) */
+@media (max-width: 1024px) {
+  .detalle-grid {
+    flex-direction: column;
+  }
+}
