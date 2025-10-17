@@ -12,29 +12,36 @@ function Login() {
   };
 
   return (
-    <main className="login-container">
-      <h2>Iniciar Sesión</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Correo electrónico"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Ingresar</button>
-      </form>
-      <p>
-        ¿No tienes cuenta? <a href="/registro">Regístrate aquí</a>
-      </p>
-    </main>
+    <div className="login-page">
+      <div className="login-card">
+        <div className="login-avatar" aria-hidden="true">👤</div>
+        <h2>Bienvenido de nuevo</h2>
+        <p>Inicia sesión en tu cuenta para acceder al panel clínico.</p>
+
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+
+          <button type="submit">Ingresar</button>
+        </form>
+
+        <div className="links">
+          ¿No tienes cuenta? <a href="/registro">Regístrate aquí</a>
+        </div>
+      </div>
+    </div>
   );
 }
 

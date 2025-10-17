@@ -9,6 +9,8 @@ const menu = [
   { icon: sidebarIcons.Exámenes, label: "Exámenes", to: "/examenes" },
   { icon: sidebarIcons.Remisiones, label: "Remisiones", to: "/remisiones" },
   { icon: sidebarIcons.Citas, label: "Citas", to: "/citas" },
+  { icon: sidebarIcons.Juegos, label: "Juegos", to: "/juegos/seguir-punto" },
+  { icon: sidebarIcons.Juegos, label: "Encontrar letra", to: "/juegos/encontrar-letra" },
 ];
 
 const Sidebar = () => {

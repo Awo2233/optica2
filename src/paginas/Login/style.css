@@ -1,3 +1,55 @@
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #e6f0ff 0%, #f8fbff 100%);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.login-card {
+  width: 420px;
+  background: linear-gradient(180deg, #ffffffcc 0%, #ffffff 100%);
+  border-radius: 16px;
+  padding: 2.25rem 2rem 1.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(14, 48, 120, 0.08);
+  text-align: center;
+}
+
+.login-avatar {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 0.75rem auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #60a5fa, #3b82f6);
+  color: #fff;
+  font-size: 2.2rem;
+  box-shadow: 0 8px 20px rgba(59,130,246,0.2);
+}
+
+.login-card h2 { color: #0b3a8a; margin-bottom: 0.25rem; }
+.login-card p { color: #475569; margin-bottom: 1rem; }
+
+.login-card form { display: grid; gap: 0.6rem; }
+.login-card input[type="email"], .login-card input[type="password"] {
+  padding: 0.8rem 0.5rem; border-radius: 6px; border: none; font-size: 1rem; background: transparent;
+  border-bottom: 2px solid rgba(14, 39, 102, 0.06);
+}
+.login-card input::placeholder { color: rgba(15,23,42,0.35); }
+
+.login-card button {
+  margin-top: 0.6rem;
+  background: linear-gradient(90deg,#60a5fa,#3b82f6);
+  color: #fff; padding: 0.9rem; border-radius: 10px; border: none; cursor: pointer; font-weight: 600;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.18);
+}
+
+.login-card .links { margin-top: 0.6rem; text-align: center; color: #6b7280; }
+
 .login-container, .registro-container {
   max-width: 400px;
   margin: 80px auto;
