@@ -9,9 +9,12 @@ import NuevoExamen from "./paginas/NuevoExamen";
 import DetalleExamen from "./paginas/DetalleExamen";
 import Remisiones from "./paginas/Remisiones";
 import NuevoRemision from "./paginas/Remisiones/NuevoRemision";
+import Consultas from "./paginas/Consultas";
+import NuevoConsulta from "./paginas/Consultas/NuevoConsulta";
 import Citas from "./paginas/Citas";
 import SeguirPunto from "./paginas/Juegos/SeguirPunto";
 import EncontrarLetra from "./paginas/Juegos/EncontrarLetra";
+import JuegosHome from "./paginas/Juegos";
 import Login from "./paginas/Login";
 import Registro from "./paginas/Registro";
 import Logout from "./paginas/Logout";
@@ -37,6 +40,9 @@ function App() {
             <Route path="/nuevo-examen" element={<NuevoExamen />} />
             <Route path="/examen/:id" element={<DetalleExamen />} />
             <Route path="/remisiones" element={<Remisiones />} />
+            <Route path="/consultas" element={<Consultas />} />
+            <Route path="/nueva-consulta" element={<NuevoConsulta />} />
+            <Route path="/juegos" element={<JuegosHome />} />
             <Route path="/nuevo-remision" element={<NuevoRemision />} />
             <Route path="/juegos/seguir-punto" element={<SeguirPunto />} />
             <Route path="/juegos/encontrar-letra" element={<EncontrarLetra />} />

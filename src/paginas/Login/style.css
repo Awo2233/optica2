@@ -41,6 +41,40 @@
 }
 .login-card input::placeholder { color: rgba(15,23,42,0.35); }
 
+/* Inputs unificados para login y registro */
+.login-card input,
+.login-card textarea,
+.login-card select,
+.login-card .form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.9rem 0.75rem;
+  height: 42px;
+  min-height: 42px;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.08);
+  background: #fff;
+  font-size: 0.98rem;
+  color: #0f172a;
+}
+.login-card input:focus,
+.login-card textarea:focus,
+.login-card select:focus,
+.login-card .form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+  border-color: rgba(59,130,246,0.6);
+}
+
+.form-error {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(153,27,27,0.12);
+}
+
 .login-card button {
   margin-top: 0.6rem;
   background: linear-gradient(90deg,#60a5fa,#3b82f6);
@@ -88,4 +122,18 @@ button {
 
 button:hover {
   background: #2563eb;
+}
+
+/* Forzar color de texto negro en botones en toda la app */
+button,
+.btn,
+.btn-juego,
+.btn-toggle,
+.btn-toggle.unico,
+.btn-start,
+.btn-stop,
+.btn-ver,
+.btn-editar,
+.btn-eliminar {
+  color: #000 !important;
 }

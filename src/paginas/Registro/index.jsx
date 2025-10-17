@@ -65,11 +65,11 @@ function Registro() {
 
         <form onSubmit={handleSubmit}>
           {error && <div className="form-error">{error}</div>}
-          <input type="text" placeholder="Nombre completo" value={nombre} onChange={(e)=>setNombre(e.target.value)} />
-          <input type="email" placeholder="Correo electrónico" value={email} onChange={(e)=>setEmail(e.target.value)} />
-          <input type="text" placeholder="Número de teléfono" value={telefono} onChange={(e)=>setTelefono(e.target.value)} />
-          <input type="password" placeholder="Contraseña" value={password} onChange={(e)=>setPassword(e.target.value)} />
-          <input type="password" placeholder="Confirmar contraseña" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
+          <input className="form-input" type="text" placeholder="Nombre completo" value={nombre} onChange={(e)=>setNombre(e.target.value)} />
+          <input className="form-input" type="email" placeholder="Correo electrónico" value={email} onChange={(e)=>setEmail(e.target.value)} />
+          <input className="form-input" type="text" placeholder="Número de teléfono" value={telefono} onChange={(e)=>setTelefono(e.target.value)} />
+          <input className="form-input" type="password" placeholder="Contraseña" value={password} onChange={(e)=>setPassword(e.target.value)} />
+          <input className="form-input" type="password" placeholder="Confirmar contraseña" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
 
           <button type="submit">Registrarse</button>
         </form>
